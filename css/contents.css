@@ -1,7 +1,26 @@
 @charset "utf-8";
 
 html, body{height:100%;}
-body{background-color: #181818;}
+body{background-color: #181818;overflow-y:auto;}
+
+/* custom scrollbar */
+.c-scrollbar{overflow:auto;}
+.c-scrollbar::-webkit-scrollbar{width:10px;}
+.c-scrollbar::-webkit-scrollbar-track{background-color:#fff;}
+.c-scrollbar::-webkit-scrollbar-thumb{background-color: #d2d4d9;border:2px solid #fff;}
+.c-scrollbar::-webkit-scrollbar-thumb:hover{background-color:#bbd7ff;}
+.c-scrollbar::-webkit-scrollbar:horizontal{height:10px;background-color:#fff;}
+.c-scrollbar::-webkit-scrollbar-thumb:horizontal{background-color: #d2d4d9;}
+.c-scrollbar::-webkit-scrollbar-thumb:horizontal:hover{background-color:#bbd7ff;}
+.c-scrollbar::-webkit-scrollbar-button{height:8px;}
+.c-scrollbar::-webkit-scrollbar-button:start{background:#fff url(../img/icon/ic-scroll-up-dis.svg) 50% 50% no-repeat;}
+.c-scrollbar::-webkit-scrollbar-button:start:hover{background:#fff url(../img/icon/ic-scroll-up-hov.svg) 50% 50% no-repeat;}
+.c-scrollbar::-webkit-scrollbar-button:end{background:#fff url(../img/icon/ic-scroll-down-dis.svg) 50% 50% no-repeat;}
+.c-scrollbar::-webkit-scrollbar-button:end:hover{background:#fff url(../img/icon/ic-scroll-down-hov.svg) 50% 50% no-repeat;}
+.c-scrollbar::-webkit-scrollbar-button:horizontal:start{background:#fff url(../img/icon/ic-scroll-left-dis.svg) 50% 50% no-repeat;}
+.c-scrollbar::-webkit-scrollbar-button:horizontal:start:hover{background:#fff url(../img/icon/ic-scroll-left-hov.svg) 50% 50% no-repeat;}
+.c-scrollbar::-webkit-scrollbar-button:horizontal:end{background:#fff url(../img/icon/ic-scroll-right-dis.svg) 50% 50% no-repeat;}
+.c-scrollbar::-webkit-scrollbar-button:horizontal:end:hover{background:#fff url(../img/icon/ic-scroll-right-hov.svg) 50% 50% no-repeat;}
 
 .intro-wrap{height:100%;width:100%;display:flex;justify-content: center;align-items: center;flex-direction: column;}
 .intro-wrap .logo-area{display:flex;justify-content: center;gap:20px;}
@@ -14,3 +33,7 @@ body{background-color: #181818;}
 .intro-menu > li a .txt{margin-top:8px;font-size:20px;font-weight:bold;color:#fff;}
 .intro-menu > li.db a{background-color: #3689ff;}
 .intro-menu > li.sls a{background-color: #6b04ff;}
+
+.intro-copy{border-top:1px solid #38393b;padding:32px 0;text-align:center;}
+.intro-copy .logo{display:flex;justify-content: center;gap:20px;}
+.intro-copy .copy{font-size:12px;font-weight:600;color:#6f747d;margin-top:24px;}
